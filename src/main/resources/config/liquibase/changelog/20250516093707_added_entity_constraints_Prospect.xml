@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <!--
+        Added the constraints for entity Prospect.
+    -->
+    <changeSet id="20250516093707-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="civility_id"
+                                 baseTableName="prospect"
+                                 constraintName="fk_prospect__civility_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="civility"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="family_status_id"
+                                 baseTableName="prospect"
+                                 constraintName="fk_prospect__family_status_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="family_status"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="income_type_id"
+                                 baseTableName="prospect"
+                                 constraintName="fk_prospect__income_type_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="income_type"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="income_periodicity_id"
+                                 baseTableName="prospect"
+                                 constraintName="fk_prospect__income_periodicity_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="income_periodicity"
+                                 />
+    </changeSet>
+</databaseChangeLog>

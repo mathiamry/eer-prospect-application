@@ -1,0 +1,139 @@
+{
+  "annotations": {
+    "changelogDate": "20250516093707"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "lastName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "firstName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dateOfBirth",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cityOfBirth",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "countryOfBirth",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nationality",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "motherLastName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "motherFirstName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "wifeLastName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "wifeFirstName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "familyStatusLabel",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "countryOfResidence",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "city",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "addressLine",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "phoneNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "idPaperType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "idPaperNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "idPaperDeliveryDate",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "idPaperDeliveryPlace",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "idPaperValidityDate",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "professionCategory",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "profession",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "employer",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "incomeAmount",
+      "fieldType": "BigDecimal"
+    }
+  ],
+  "name": "Prospect",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "civility",
+      "relationshipName": "civility",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "familyStatus",
+      "relationshipName": "familyStatus",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "incomeType",
+      "relationshipName": "incomeType",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "incomePeriodicity",
+      "relationshipName": "incomePeriodicity",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl",
+  "skipClient": true
+}

@@ -1,0 +1,22 @@
+{
+  "annotations": {
+    "changelogDate": "20250516093708"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "code",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "label",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Civility",
+  "pagination": "pagination",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl",
+  "skipClient": true
+}

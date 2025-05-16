@@ -83,6 +83,11 @@ public class CacheConfiguration {
             createCache(cm, com.cbao.eerprospect.domain.User.class.getName(), jcacheConfiguration);
             createCache(cm, com.cbao.eerprospect.domain.Authority.class.getName(), jcacheConfiguration);
             createCache(cm, com.cbao.eerprospect.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            createCache(cm, com.cbao.eerprospect.domain.Prospect.class.getName(), jcacheConfiguration);
+            createCache(cm, com.cbao.eerprospect.domain.Civility.class.getName(), jcacheConfiguration);
+            createCache(cm, com.cbao.eerprospect.domain.FamilyStatus.class.getName(), jcacheConfiguration);
+            createCache(cm, com.cbao.eerprospect.domain.IncomeType.class.getName(), jcacheConfiguration);
+            createCache(cm, com.cbao.eerprospect.domain.IncomePeriodicity.class.getName(), jcacheConfiguration);
             // jhipster-needle-redis-add-entry
         };
     }
