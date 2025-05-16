@@ -1,0 +1,62 @@
+
+entity Prospect {
+	lastName String,
+    firstName String,
+    dateOfBirth Date,
+    cityOfBirth String,
+    countryOfBirth String,
+    nationality String,
+
+    motherLastName String,
+    motherFirstName String,
+    wifeLastName String,
+    wifeFirstName String,
+    familyStatusLabel String,
+
+    countryOfResidence String,
+    city String,
+    addressLine String,
+    phoneNumber String,
+    email String,
+
+    idPaperType String,
+    idPaperNumber String,
+    idPaperDeliveryDate Date,
+    idPaperDeliveryPlace String,
+    idPaperValidityDate Date,
+
+    professionCategory String,
+    profession String,
+    employer String,
+    incomeAmount BigDecimal,
+    
+}
+entity Civility {
+    code String,
+    label String
+}
+
+entity FamilyStatus {
+    code String,
+    label String
+}
+
+entity IncomeType {
+    code String,
+    label String
+}
+
+entity IncomePeriodicity {
+    code String,
+    label String
+}
+
+relationship ManyToOne {
+    Prospect{civility} to Civility,
+    Prospect{familyStatus} to FamilyStatus,
+    Prospect{incomeType} to IncomeType,
+    Prospect{incomePeriodicity} to IncomePeriodicity
+}
+
+use serviceImpl, pagination for *
+skipClient *
